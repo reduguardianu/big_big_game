@@ -24,6 +24,7 @@ public class Player : MonoBehaviour {
 
 
 	bool initialized = false;
+    public bool isOnGround;
 
 	List<GameObject> collidedWith;
 
@@ -40,6 +41,13 @@ public class Player : MonoBehaviour {
 				OnCollision(tmp.gameObject);
 			}
 		};
+        GetComponent<CollisionHandler>().groundCollisionsEnded += (tmp) => {
+            isOnGround = false;
+        };
+
+        GetComponent<CollisionHandler>().groundCollisionsStart += (tmp) => {
+            isOnGround = true;
+        };
 	}
 
 	void OnCollision(GameObject collided) {
