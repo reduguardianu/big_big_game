@@ -26,6 +26,7 @@ public class MainLoop : MonoBehaviour {
 		players[1] = player2.GetComponent<Player>();
 		players[1].Init(stageInit, 0);
 
+		Physics.IgnoreCollision(players[0].GetComponent<Collider>(), players[1].GetComponent<Collider>());
 	}
 
 	void Won(Player player) {

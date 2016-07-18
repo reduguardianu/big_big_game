@@ -19,8 +19,7 @@ public class CameraOperator : MonoBehaviour {
 			var destination = transform.position + delta;
 			destination.y = transform.position.y;
 			destination.z = transform.position.z;
-			transform.position = Vector3.SmoothDamp(transform.position, destination, 
-													ref velocity, dampTime);
+			transform.position = destination;
 		}
 	}
 }
