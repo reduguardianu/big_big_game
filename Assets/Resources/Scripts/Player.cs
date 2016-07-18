@@ -9,7 +9,7 @@ public class Player : MonoBehaviour {
 	public float currentSpeed = 0;
 	[HideInInspector]
 	public float distance = 0;
-
+	public int hp;
 	StageConfig stage;
 
     bool stopped = false;
@@ -32,6 +32,7 @@ public class Player : MonoBehaviour {
 
 
     public void Stop() {
+		GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         stopped = true;
     }
 

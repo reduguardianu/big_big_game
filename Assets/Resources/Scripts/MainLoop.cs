@@ -44,6 +44,12 @@ public class MainLoop : MonoBehaviour {
 			return;
 		}
 
+		for (int i = 0; i < players.Length; i++) {
+			if (players[i].hp <= 0) {
+				Won(players[(i + 1) % players.Length]);
+				return;
+			}
+		}
 
 		Player moreAdvanced = null;
 		foreach (Player player in players) {
