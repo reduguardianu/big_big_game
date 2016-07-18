@@ -5,8 +5,6 @@ using System.Linq;
 
 public class Player : MonoBehaviour {
 
-	public string name;
-
 	[HideInInspector]
 	public float currentSpeed = 0;
 	[HideInInspector]
@@ -14,6 +12,7 @@ public class Player : MonoBehaviour {
 
 	StageConfig stage;
 
+    bool stopped = false;
 
 	Dictionary<SpeedMod, float> speedMods;
 
@@ -26,19 +25,20 @@ public class Player : MonoBehaviour {
 
 
 	bool initialized = false;
-	bool stopped = false;
+    public bool isOnGround;
 
 	List<GameObject> collidedWith;
+    float offset;
 
-	float offset;
+
+    public void Stop() {
+        stopped = true;
+    }
+
+    public void Init(StageConfig s, float o) {
+        offset = o;
 
 
-	public void Stop() {
-		stopped = true;
-	}
-
-	public void Init(StageConfig s, float o) {
-		offset = o;
 		collidedWith = new List<GameObject>();
 		speedMods = new Dictionary<SpeedMod, float>();
 		stage = s;
@@ -51,6 +51,13 @@ public class Player : MonoBehaviour {
 				OnCollision(tmp.gameObject);
 			}
 		};
+        GetComponent<CollisionHandler>().groundCollisionsEnded += (tmp) => {
+            isOnGround = false;
+        };
+
+        GetComponent<CollisionHandler>().groundCollisionsStart += (tmp) => {
+            isOnGround = true;
+        };
 	}
 
 	void OnCollision(GameObject collided) {
@@ -64,7 +71,7 @@ public class Player : MonoBehaviour {
 		moddedMaxSpeed = stage.maxSpeed;
 		moddedAcc = stage.acceleration;
 
-		var sorted = speedMods.Keys.OrderBy(x => speedMods[x]);
+        var sorted = speedMods.Keys.OrderBy(x => speedMods[x]);
 
 		foreach (SpeedMod speedMod in sorted) {
 			if (speedMods[speedMod] + speedMod.duration < elapsed) {
@@ -96,7 +103,7 @@ public class Player : MonoBehaviour {
 
 
 	void Update() {
-		if (!initialized || stopped) {
+        if (!initialized || stopped) {
 			return;
 		}
 
@@ -105,9 +112,9 @@ public class Player : MonoBehaviour {
 		ProccessSpeedMods();
 
 		currentSpeed = Mathf.Clamp(currentSpeed + moddedAcc * Time.deltaTime, 0, moddedMaxSpeed);
-		distance += currentSpeed * Time.deltaTime;
+		distance = gameObject.transform.position.x + currentSpeed * Time.deltaTime;
 
-		gameObject.transform.position = new Vector3(distance + offset, 0, 0);
+		gameObject.transform.position = new Vector3(distance, gameObject.transform.position.y, gameObject.transform.position.z);
 	}
 
 
