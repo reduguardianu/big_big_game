@@ -25,7 +25,7 @@ public class Player : MonoBehaviour {
 		currentSpeed = Mathf.Clamp(currentSpeed + stage.acceleration * Time.deltaTime, 0, stage.maxSpeed);
 		distance += currentSpeed * Time.deltaTime;
 
-		gameObject.transform.position = new Vector3(distance, 0, 0);
+		gameObject.transform.position = new Vector3(distance, gameObject.transform.position.y, gameObject.transform.position.z);
 	}
 
 
