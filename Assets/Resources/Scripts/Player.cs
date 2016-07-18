@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 
 	StageConfig stage;
 
+    bool stopped = false;
 
 	Dictionary<SpeedMod, float> speedMods;
 
@@ -27,8 +28,17 @@ public class Player : MonoBehaviour {
     public bool isOnGround;
 
 	List<GameObject> collidedWith;
+    float offset;
 
-	public void Init(StageConfig s) {
+
+    public void Stop() {
+        stopped = true;
+    }
+
+    public void Init(StageConfig s, float o) {
+        offset = o;
+
+
 		collidedWith = new List<GameObject>();
 		speedMods = new Dictionary<SpeedMod, float>();
 		stage = s;
@@ -93,7 +103,7 @@ public class Player : MonoBehaviour {
 
 
 	void Update() {
-		if (!initialized) {
+        if (!initialized || stopped) {
 			return;
 		}
 
