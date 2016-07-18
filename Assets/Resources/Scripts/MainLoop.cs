@@ -9,6 +9,8 @@ public class MainLoop : MonoBehaviour {
 
 	Player[] players;
 
+	bool gameHasEnded = false;
+
 	// Use this for initialization
 	void Start () {
 		players = new Player[2];
@@ -16,24 +18,49 @@ public class MainLoop : MonoBehaviour {
 		player.transform.position = stageInit.spawn.transform.position;
 
 		players[0] = player.GetComponent<Player>();
-		players[0].Init(stageInit);
+		players[0].Init(stageInit, stageInit.startOffset);
+
+		GameObject player2 = Instantiate<GameObject>(stageInit.playerBPrefab);
+		player2.transform.position = stageInit.spawn.transform.position;
+
+		players[1] = player2.GetComponent<Player>();
+		players[1].Init(stageInit, 0);
+
+	}
+
+	void Won(Player player) {
+		foreach (Player p in players) {
+			p.Stop();
+		}
+
+		Debug.Log("WON PLAYER " + player.name);
+		gameHasEnded = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		float topDistance = 0;
+		if (gameHasEnded) {
+			return;
+		}
+
+
+		Player moreAdvanced = null;
 		foreach (Player player in players) {
 			if (player == null) {
 				continue;
 			}
 
-			if (topDistance < player.distance) {
-				topDistance = player.distance;
+			if (moreAdvanced == null || moreAdvanced.distance < player.distance) {
+				moreAdvanced = player;
 			}
 		}
 
-		if (cam.transform.position.x < topDistance) {
-			cam.transform.position = new Vector3(topDistance, cam.transform.position.y, cam.transform.position.z);
+		if (cam.transform.position.x < moreAdvanced.distance) {
+			cam.transform.position = new Vector3(moreAdvanced.distance, cam.transform.position.y, cam.transform.position.z);
+		}
+
+		if (moreAdvanced.distance >= stageInit.finish.transform.position.x) {
+			Won (moreAdvanced);
 		}
 	
 	}

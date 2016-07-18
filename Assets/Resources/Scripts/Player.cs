@@ -5,6 +5,8 @@ using System.Linq;
 
 public class Player : MonoBehaviour {
 
+	public string name;
+
 	[HideInInspector]
 	public float currentSpeed = 0;
 	[HideInInspector]
@@ -24,10 +26,19 @@ public class Player : MonoBehaviour {
 
 
 	bool initialized = false;
+	bool stopped = false;
 
 	List<GameObject> collidedWith;
 
-	public void Init(StageConfig s) {
+	float offset;
+
+
+	public void Stop() {
+		stopped = true;
+	}
+
+	public void Init(StageConfig s, float o) {
+		offset = o;
 		collidedWith = new List<GameObject>();
 		speedMods = new Dictionary<SpeedMod, float>();
 		stage = s;
@@ -85,7 +96,7 @@ public class Player : MonoBehaviour {
 
 
 	void Update() {
-		if (!initialized) {
+		if (!initialized || stopped) {
 			return;
 		}
 
@@ -96,7 +107,7 @@ public class Player : MonoBehaviour {
 		currentSpeed = Mathf.Clamp(currentSpeed + moddedAcc * Time.deltaTime, 0, moddedMaxSpeed);
 		distance += currentSpeed * Time.deltaTime;
 
-		gameObject.transform.position = new Vector3(distance, gameObject.transform.position.y, gameObject.transform.position.z);
+		gameObject.transform.position = new Vector3(distance + offset, 0, 0);
 	}
 
 
