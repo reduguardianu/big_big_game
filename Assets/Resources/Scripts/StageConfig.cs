@@ -9,10 +9,12 @@ public class StageConfig : MonoBehaviour {
 
 	[Header("Refrences")]
 	public GameObject spawn;
+	public GameObject finish;
 
 	[Header("Settings")]
 	public float maxSpeed;
 	public float acceleration;
+	public float startOffset;
 
 	// Use this for initialization
 	void Start () {
