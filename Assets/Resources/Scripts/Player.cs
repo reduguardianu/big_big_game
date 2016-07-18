@@ -25,11 +25,28 @@ public class Player : MonoBehaviour {
 
 	bool initialized = false;
 
+	List<GameObject> collidedWith;
+
 	public void Init(StageConfig s) {
+		collidedWith = new List<GameObject>();
 		speedMods = new Dictionary<SpeedMod, float>();
 		stage = s;
 
 		initialized = true;
+
+		GetComponent<CollisionHandler>().importantCollision += (tmp) => {
+			if (collidedWith.IndexOf(tmp.gameObject) == -1) {
+				collidedWith.Add(tmp.gameObject);
+				OnCollision(tmp.gameObject);
+			}
+		};
+	}
+
+	void OnCollision(GameObject collided) {
+		var mods = collided.GetComponents<SpeedMod>();
+		if (mods.Length > 0) {
+			ApplySpeedMods(mods);
+		}
 	}
 
 	void ProccessSpeedMods() {
@@ -44,22 +61,25 @@ public class Player : MonoBehaviour {
 			}
 
 			if (speedMod.accMul > 0) {
-				moddedAcc += moddedAcc * speedMod.accMul;
+				moddedAcc = moddedAcc * speedMod.accMul;
 			}
 			moddedAcc += speedMod.accAdd;
 
 			if (speedMod.maxSpeedMul > 0) {
-				moddedMaxSpeed += moddedMaxSpeed * speedMod.maxSpeedMul;
+				moddedMaxSpeed = moddedMaxSpeed * speedMod.maxSpeedMul;
 			}
 			moddedMaxSpeed += speedMod.maxSpeedAdd;
 
 		}
 	}
 
-	void ApplySpeedMod(SpeedMod mod) {
-		speedMods[mod] = elapsed;
-		ProccessSpeedMods();
-		currentSpeed += mod.oneTimeSpeed;
+	void ApplySpeedMods(SpeedMod[] mods) {
+		foreach (SpeedMod mod in mods) {
+			speedMods[mod] = elapsed;
+			ProccessSpeedMods();
+			currentSpeed =  Mathf.Clamp(currentSpeed +  mod.oneTimeSpeed, 0, moddedMaxSpeed);
+
+		}
 	}
 
 
