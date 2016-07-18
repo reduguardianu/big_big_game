@@ -61,7 +61,7 @@ public class Player : MonoBehaviour {
 		moddedMaxSpeed = stage.maxSpeed;
 		moddedAcc = stage.acceleration;
 
-		var sorted = speedMods.Keys.OrderBy(x => speedMods[x]);
+        var sorted = speedMods.Keys.OrderBy(x => speedMods[x]);
 
 		foreach (SpeedMod speedMod in sorted) {
 			if (speedMods[speedMod] + speedMod.duration < elapsed) {
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour {
 		ProccessSpeedMods();
 
 		currentSpeed = Mathf.Clamp(currentSpeed + moddedAcc * Time.deltaTime, 0, moddedMaxSpeed);
-		distance += currentSpeed * Time.deltaTime;
+		distance = gameObject.transform.position.x + currentSpeed * Time.deltaTime;
 
 		gameObject.transform.position = new Vector3(distance, gameObject.transform.position.y, gameObject.transform.position.z);
 	}
