@@ -1,0 +1,14 @@
+*.DS_Store
+*.swp
+*.tmp
+*.swf
+*.ipa
+*.apk
+*.csproj
+*.unityproj
+*.sln
+*.rdb
+*.iml
+Temp
+Library
+UnityVS.client.sdf
