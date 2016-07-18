@@ -12,13 +12,13 @@ public class MovementComponent : MonoBehaviour {
     [SerializeField]
     string dash;
 
-
 	void Start () {
     }
 
 	void Update () {
 
         
+        this.GetComponent<Player>().playerAnimation.SetBool("jump", !GetComponent<Player>().isOnGround);
         if (Input.GetButtonDown(jump) && this.GetComponent<Player>().isOnGround) 
         {
             jumpPressTime = Time.time;

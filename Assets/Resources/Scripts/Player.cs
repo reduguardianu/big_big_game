@@ -30,6 +30,7 @@ public class Player : MonoBehaviour {
 	List<GameObject> collidedWith;
     float offset;
 
+    public Animator playerAnimation;
 
     public void Stop() {
 		GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);

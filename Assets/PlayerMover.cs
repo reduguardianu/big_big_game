@@ -20,5 +20,6 @@ public class PlayerMover : MonoBehaviour {
 			return;
 		}
 		collider.gameObject.GetComponent<Player>().hp -= damage;
+        collider.gameObject.GetComponent<Player>().playerAnimation.SetTrigger("Hit");
 	}
 }
