@@ -113,7 +113,6 @@ public class Player : MonoBehaviour {
 
 		currentSpeed = Mathf.Clamp(currentSpeed + moddedAcc * Time.deltaTime, 0, moddedMaxSpeed);
 		distance = gameObject.transform.position.x + currentSpeed * Time.deltaTime;
-
 		gameObject.transform.position = new Vector3(distance, gameObject.transform.position.y, gameObject.transform.position.z);
 	}
 

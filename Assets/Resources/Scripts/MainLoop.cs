@@ -55,9 +55,7 @@ public class MainLoop : MonoBehaviour {
 			}
 		}
 
-		if (cam.transform.position.x < moreAdvanced.distance) {
-			cam.transform.position = new Vector3(moreAdvanced.distance, cam.transform.position.y, cam.transform.position.z);
-		}
+		cam.GetComponent<CameraOperator>().target = moreAdvanced.gameObject;
 
 		if (moreAdvanced.distance >= stageInit.finish.transform.position.x) {
 			Won (moreAdvanced);
