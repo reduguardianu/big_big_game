@@ -1,0 +1,1692 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"products	List<string>"
+			],
+			[
+				"AlchemyReci",
+				"AlchemyRecipeProductType	AlchemyRecipeProductType"
+			],
+			[
+				"GetCo",
+				"GetComponent(Type type)	Component"
+			],
+			[
+				"spell",
+				"spellManaCost	GameObject"
+			],
+			[
+				"Spell",
+				"SpellToken	SpellToken"
+			],
+			[
+				"Exce",
+				"UnityException(string message)	UnityException(string message)"
+			],
+			[
+				"AlchemyRecipeP",
+				"AlchemyRecipeProductType	AlchemyRecipeProductType"
+			],
+			[
+				"pro",
+				"productType	string"
+			],
+			[
+				"he",
+				"heroesNeedsRefresh	bool"
+			],
+			[
+				"co",
+				"content	GameObject"
+			],
+			[
+				"SlbxTab",
+				"SLBXTabManager	SLBXTabManager"
+			],
+			[
+				"GetCom",
+				"GetComponentInChildren<T>()	T"
+			],
+			[
+				"C",
+				"Count	int { get; }"
+			],
+			[
+				"Get",
+				"GetComponents<T>()	T[]"
+			],
+			[
+				"spel",
+				"spellsNeedsRefresh	bool"
+			],
+			[
+				"activ",
+				"activeSelf	bool { get; }"
+			],
+			[
+				"recipe",
+				"recipesWidgets	List<GameObject>"
+			],
+			[
+				"reci",
+				"recipeObject	GameObject"
+			],
+			[
+				"recip",
+				"recipesWidgets	List<GameObject>"
+			],
+			[
+				"heroR",
+				"heroesRecipesWidgets	List<GameObject>"
+			],
+			[
+				"Redr",
+				"RedrawList(GameObject list, List<GameObject> recipesWidgets)	void"
+			],
+			[
+				"rec",
+				"recipesWidgets	List<GameObject>"
+			],
+			[
+				"AlchmeyR",
+				"AlchemyRecipe	AlchemyRecipe"
+			],
+			[
+				"Game",
+				"GameObject	GameObject"
+			],
+			[
+				"Gra",
+				"GrantSpell(string spellId, int count = 1)	void"
+			],
+			[
+				"gran",
+				"grantSpells(...)	Void"
+			],
+			[
+				"s",
+				"spells	Map<String, models.SpellModel>"
+			],
+			[
+				"Item",
+				"ItemType	class"
+			],
+			[
+				"GetSpe",
+				"GetSpellsModelsByIdsOrdered(List<string> ids)	List<SpellModel>"
+			],
+			[
+				"R",
+				"Remove(TKey key)	bool"
+			],
+			[
+				"Co",
+				"ContainsKey(TKey key)	bool"
+			],
+			[
+				"Pla",
+				"Player	PlayerData { get; set; }"
+			],
+			[
+				"sp",
+				"spells	Map<String, Int>"
+			],
+			[
+				"pu",
+				"purchaseSpellPackage(...)	Unknown<36>"
+			],
+			[
+				"a",
+				"amount	Int"
+			],
+			[
+				"ad",
+				"addCurrencyRecordItem(...)	Void"
+			],
+			[
+				"sot",
+				"storeSpellId"
+			],
+			[
+				"spe",
+				"spells"
+			],
+			[
+				"sto",
+				"storeSpells	Array<models.spells.StoreSpellModel>"
+			],
+			[
+				"pla",
+				"player	var"
+			],
+			[
+				"Set",
+				"SetCurrentChestPanel(int index)	void"
+			],
+			[
+				"Init",
+				"InitSpells(Action onFinish)	void"
+			],
+			[
+				"thro",
+				"throbberSem	Semaphore"
+			],
+			[
+				"Show",
+				"showSpellsButton	SLBXButton"
+			],
+			[
+				"GetCompon",
+				"GetComponent<T>()	T"
+			],
+			[
+				"cost",
+				"costCurve	models.CurveModel"
+			],
+			[
+				"targetHero",
+				"targetHeroModel	Null<models.HeroModel>"
+			],
+			[
+				"fu",
+				"fuseCostStructure	models.HeroFusionCostStructure"
+			],
+			[
+				"fus",
+				"fuseCostStructure	models.HeroFusionCostStructure"
+			],
+			[
+				"cos",
+				"costUpper	models.HeroFusionCost"
+			],
+			[
+				"HeroFus",
+				"HeroFusionCostStructure	class"
+			],
+			[
+				"tmp",
+				"tmpLevel	Int"
+			],
+			[
+				"l",
+				"level	Int"
+			],
+			[
+				"hero",
+				"heroFusionCost	Dynamic"
+			],
+			[
+				"week",
+				"weekBeginTs	Int"
+			],
+			[
+				"lo",
+				"logger	yawf.ILogger"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"dun",
+				"dungeonLoot	models.LootData"
+			],
+			[
+				"getPvp",
+				"getPvpDungeonLoot(...)	models.LootData"
+			],
+			[
+				"pvp",
+				"pvpSetup	models.pvp.PvpDungeonSetup"
+			],
+			[
+				"OnP",
+				"onPvpKeysChange(...)	Unknown<38>"
+			],
+			[
+				"st",
+				"stats	stats.PHStats"
+			],
+			[
+				"onA",
+				"onAtomEvent( event : String )	Void"
+			],
+			[
+				"heroMode",
+				"heroModelId	String"
+			],
+			[
+				"ObjectMap",
+				"ObjectMapper	yawf"
+			],
+			[
+				"t",
+				"tE	yawf.reflections.TypeEnum"
+			],
+			[
+				"Type",
+				"TypeEnum	class"
+			],
+			[
+				"Refle",
+				"Reflection	yawf.reflections"
+			],
+			[
+				"Alchem",
+				"AlchemyRecipeIngredient	class"
+			],
+			[
+				"re",
+				"reflections	package"
+			],
+			[
+				"for",
+				"foreach	foreach"
+			],
+			[
+				"Alc",
+				"AlchemyWeekModel	class"
+			],
+			[
+				"startsIn",
+				"startsInLabel	GameObject"
+			],
+			[
+				"is",
+				"isExpired	bool"
+			],
+			[
+				"star",
+				"startsInLabel	GameObject"
+			],
+			[
+				"starts",
+				"startsInLabel	GameObject"
+			],
+			[
+				"Color",
+				"Color(float r, float g, float b)	Color(float r, float g, float b)"
+			],
+			[
+				"start",
+				"startsIn	int"
+			],
+			[
+				"ma",
+				"Max(params int[] values)	int"
+			],
+			[
+				"Slbx",
+				"SLBXButton	SLBXButton"
+			],
+			[
+				"temp",
+				"tempRecipeInfo	?"
+			],
+			[
+				"GetAlch",
+				"GetAlchemyRecipeById(string id)	AlchemyRecipe"
+			],
+			[
+				"Alchemy",
+				"AlchemyRecipeType	AlchemyRecipeType"
+			],
+			[
+				"GetAl",
+				"GetAlchemyRecipesByType(string type)	List<AlchemyRecipe>"
+			],
+			[
+				"AlchemyRec",
+				"AlchemyRecipeType	AlchemyRecipeType"
+			],
+			[
+				"To",
+				"ToList()	List<TSource>"
+			],
+			[
+				"GetA",
+				"GetAvailableAlchemyRecipesWithEndTimestamp(Action<List<AlchemyRecipeInfoModel>> cb)	void"
+			],
+			[
+				"class",
+				"classToLabel	Map<String, String>"
+			],
+			[
+				"en",
+				"enabled	Bool"
+			],
+			[
+				"get",
+				"getClassName(...)	String"
+			],
+			[
+				"cycle",
+				"CycleModel	class"
+			],
+			[
+				"warni",
+				"warning	GameObject"
+			],
+			[
+				"GetP",
+				"GetPvpHeroLoc(string heroInstanceId)	Pair<int, int>"
+			],
+			[
+				"used",
+				"usedInSlot	List<HeroInstanceData>"
+			],
+			[
+				"war",
+				"warningUpgraded	bool"
+			],
+			[
+				"Pa",
+				"PackLayout	PackLayout"
+			],
+			[
+				"chu",
+				"chuiLayout	PHChuiLayout"
+			],
+			[
+				"AlchemyWa",
+				"AlchemyWarningPopup	AlchemyWarningPopup"
+			],
+			[
+				"alche",
+				"alchemyWarningPopup	WindowMetaInfo"
+			],
+			[
+				"defe",
+				"defenseIco	GameObject"
+			],
+			[
+				"upgrade",
+				"upgraded	bool"
+			],
+			[
+				"count",
+				"countText	GameObject"
+			],
+			[
+				"usedIn",
+				"usedInSlot	?"
+			],
+			[
+				"Cont",
+				"ContinueWithTransmute(int chosenProductIndex)	void"
+			],
+			[
+				"alch",
+				"alchemyChooseResultPopup	WindowMetaInfo"
+			],
+			[
+				"GetIn",
+				"GetInstanceComponent<T>()	T"
+			],
+			[
+				"con",
+				"continue	continue"
+			],
+			[
+				"tra",
+				"transmuteButton	GameObject"
+			],
+			[
+				"ce",
+				"centralSlot	GameObject"
+			],
+			[
+				"I",
+				"Init(string label, List<string> products)	void"
+			],
+			[
+				"AlchemtRe",
+				"AlchemyRecipeTargetMultiWidget	AlchemyRecipeTargetMultiWidget"
+			],
+			[
+				"centr",
+				"centralMultiSlot	GameObject"
+			],
+			[
+				"OpenPe",
+				"OpenAlchemyPentagram(AlchemyRecipe recipe, int chosenProduct = 0)	void"
+			],
+			[
+				"OpenWin",
+				"OpenWindowWithFade(WindowMetaInfo window, WindowMetaInfo fade, Action<GameObject> callback = null)	void"
+			],
+			[
+				"ri",
+				"rightAnchor	Anchor"
+			],
+			[
+				"bar",
+				"barQuad	GameObject"
+			],
+			[
+				"ingre",
+				"ingredient	AlchemyRecipeIngredient"
+			],
+			[
+				"Alche",
+				"AlchemyRecipeSlot	AlchemyRecipeSlot"
+			],
+			[
+				"Instan",
+				"Instantiate<T>(T original)	T"
+			],
+			[
+				"AlchemyRecip",
+				"AlchemyRecipeTargetMultiWidget	AlchemyRecipeTargetMultiWidget"
+			],
+			[
+				"AlchemyRe",
+				"AlchemyRecipesScreen	AlchemyRecipesScreen"
+			],
+			[
+				"remo",
+				"removeHeroes(...)	Void"
+			],
+			[
+				"heroMo",
+				"heroModelId	String"
+			],
+			[
+				"in",
+				"ingredients	Array<models.alchemy.AlchemyRecipeIngredient>"
+			],
+			[
+				"Ale",
+				"AlchemyRecipeIngredient	class"
+			],
+			[
+				"sh",
+				"shardsCost	Int"
+			],
+			[
+				"A",
+				"AlchemyRecipe	class"
+			],
+			[
+				"gol",
+				"goldBoosterPriceOne	int"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "",
+			"file": "asd",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"packageMa",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Packag",
+				"Package Control: Enable Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Code Folding: Unfold All"
+			],
+			[
+				"Gitl",
+				"Git: Log Current File"
+			],
+			[
+				"Git lo",
+				"Git: Log Current File"
+			],
+			[
+				"git",
+				"Git: Log Current File"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"P",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet: ",
+				"Snippet: hello"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Paca",
+				"Package Control: Remove Package"
+			],
+			[
+				"PAc",
+				"Package Control: Install Package"
+			],
+			[
+				"haxe",
+				"Haxelib: List Installed"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"console",
+				"Set Syntax: R Console"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 300.0,
+		"history":
+		[
+			"view.text_point(1, 3)",
+			"view.text_point(2, 3)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(False_",
+			"sublime.log_commands(True)",
+			"view.line(1182)",
+			"o.run_command('append', {'characters': \"ascmxcmxzcxzmcxzcxzd\", 'force': True, 'scroll_to_end': True})",
+			"o.run_command('append', {'characters': \"asd\", 'force': True, 'scroll_to_end': True})",
+			"o",
+			"sublime.log_commands(False)",
+			"o = window.create_output_panel(\"exec\")",
+			"asd",
+			"window.run_command(\"show_panel\", {\"panel\": \"output.exec\"})",
+			"pt.end_edit(edit)",
+			"pt.insert(edit, pt.size(), \"xxxasd\")",
+			"edit = pt.begin_edit(3, 'asd')",
+			"edit = pt.begin_edit(3, 'asd').",
+			"pt.begin_edit(3)",
+			"pt.begin_edit(3, 'asd')",
+			"pt.begin_edit('asd', 'asd')",
+			"pt.begin_edit()",
+			"dir(pt)",
+			"pt.full_line(0)",
+			"pt.lines()",
+			"pt.name()",
+			"pt.NAME()",
+			"pt.full_line(0)",
+			"pt.fullline(0)",
+			"pt.line(0)",
+			"pt.edit",
+			"pt.insert()",
+			"pt.begin_edit()",
+			"pt.set_read_only(False)",
+			"dir(pt)",
+			"pt = window.get_output_panel(\"output.exec\")",
+			"sublime.log_commands(True)",
+			"sublime.run_command('haxime_build')",
+			"sublime_plugin.run_command('haxime_build')",
+			"view.window().run_command('haxime_build')",
+			"window()",
+			"window.run_command('haximeBuild')",
+			"window.run_command('haxime_builddsadsad')",
+			"window.run_command('haxime_build')",
+			"window.run_command('build')",
+			"window.run_command()",
+			"window.run_command",
+			"build",
+			"sublime.run_command('build')",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(true)",
+			"sublime.run_command('builddasdasd')",
+			"sublime.run_command('build')",
+			"sublime_plugin.run_command('build')",
+			"view.display",
+			"display",
+			"dsadasdas",
+			"view.run_command(\"example2\")",
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyRecipes/TargetSlots/SpellToken.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyChooseResultPopup/HeroChooseResult.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyRecipes/AlchemyRecipePanel.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyRecipes/TargetSlots/AlchemyHeroProductTarget.cs",
+		"/Users/miko/projects/ph/server/resources/models/default/alchemy.xml",
+		"/Users/miko/projects/ph/server/resources/models/default/spells.xml",
+		"/Users/miko/projects/ph/server/resources/models/default/game.xml",
+		"/Users/miko/projects/ph/client/Assets/Chui/Injector.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyRecipes/TargetSlots/GlowedSpell.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/SpellModel.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/SpellsPickerPopup/SpellsPickerPopup.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/SpellsModel.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyRecipes/TemporaryRecipe.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyRecipes/PersistentRecipe.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/State/State.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/Model.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MessageHub/MessageHub.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MessageHub/IMessageHubAttachment.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MessageHub/AttachmentCurrency.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MessageHub/AttachmentHero.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/State/PlayerMessageAttachment.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MessageHub/CollapsedMessage.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MessageHub/SpellAttachment.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Service.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Errors.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/GoldpacksShop/ShopScreen.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/GoldpacksShop/SpellsShopScreen.cs",
+		"/Users/miko/projects/ph/server/models/messages/MessageAttachment.hx",
+		"/Users/miko/projects/ph/server/logic/PlayerManager.hx",
+		"/Users/miko/projects/ph/server/models/ItemType.hx",
+		"/Users/miko/projects/ph/server/logic/PHHelpers.hx",
+		"/Users/miko/projects/ph/client/Assets/Scripts/PHChuiLayout.cs",
+		"/Users/miko/projects/ph/server/services/MainService.hx",
+		"/Users/miko/projects/ph/server/services/MessageMarkedDTO.hx",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MessageHub/Message.cs",
+		"/Users/miko/projects/ph/server/yawf/yawf/Service.hx",
+		"/Users/miko/projects/ph/server/yawf/yawf/ObjectMapper.hx",
+		"/Users/miko/projects/ph/client/Assets/Scripts/ServerActions.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/DTO/MessageMarkedDTO.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/Common/HeroTokenWidget.cs",
+		"/Users/miko/projects/ph/server/models/messages/MessageAttachmentType.hx",
+		"/Users/miko/projects/ph/server/models/spells/StoreSpellModel.hx",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/StoreSpellModel.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/ModelData.cs",
+		"/Users/miko/projects/ph/server/models/MiniGameStatsData.hx",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/GoldpacksShop/ChestShopScreen.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/GoldpacksShop/GoldpacksShopWithPayments.cs",
+		"/Users/miko/projects/ph/server/services/PaymentsService.hx",
+		"/Users/miko/projects/ph/server/models/SpellsModel.hx",
+		"/Users/miko/projects/ph/server/models/PlayerData.hx",
+		"/Users/miko/projects/ph/server/models/ModelData.hx",
+		"/Users/miko/projects/ph/client/Assets/Scripts/State/PlayerData.cs",
+		"/Users/miko/projects/ph/server/yawf/yawf/redis/RedisNumberHashKey.hx",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/GoldpacksShop/ShopSpellPanel.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/GoldpacksShop/SpellsPart.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/GoldpacksShop/ShopChestPanel.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/GoldpacksShop/SpecialOffersShopScreen.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/BottomBar/BottomBar.cs",
+		"/Users/miko/projects/ph/server/resources/models/default/payments.xml",
+		"/Users/miko/projects/ph/server/models/ProductModel.hx",
+		"/Users/miko/projects/ph/server/models/ProductType.hx",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/GoldpacksShop/GoldpackShopScreen.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/PHPayments.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/EditTeam/EditTeamScreen.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/SpellsGetMorePopup/SpellsGetMorePopup.cs",
+		"/Users/miko/projects/ph/server/configs/prod-android.json",
+		"/Users/miko/projects/ph/server/configs/prod-ios.json",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Tools/Semaphore.cs",
+		"/Users/miko/projects/ph/server/stats/PHStats.hx",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/Common/Windows.cs",
+		"/Users/miko/projects/ph/client/Assets/Chui/GridLayout.cs",
+		"/Users/miko/projects/ph/server/admin/templates/Layout",
+		"/Users/miko/projects/ph/client/Assets/Chui/VirtualElementGroup.cs",
+		"/Users/miko/projects/ph/client/Assets/Chui/VirtualElement.cs",
+		"/Users/miko/projects/ph/scripts/src/ph/core/TutorialUtil.hx",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/EditTeam/EditTeamSlot.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/TutorialMode/TutorialMode.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyPentagram/AlchemyPentagram.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/ScreenTracker.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/LoginProcedure.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/MATUtils.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/HeroModel.cs",
+		"/Users/miko/projects/ph/server/resources/models/default/pvp.xml",
+		"/Users/miko/projects/ph/client/Assets/Scripts/_.cs",
+		"/Users/miko/projects/ph/scripts/src/ph/Main.hx",
+		"/Users/miko/projects/ph/server/models/HeroModel.hx",
+		"/Users/miko/projects/ph/server/models/StrongholdDungeonModel.hx",
+		"/Users/miko/projects/ph/server/models/HeroFusionCostCurve.hx",
+		"/Users/miko/projects/ph/server/resources/models/default/heroes.xml",
+		"/Users/miko/projects/ph/server/models/CurveModel.hx",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/FullHeroView/FullHeroView.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/CurveModel.cs",
+		"/Users/miko/projects/ph/server/resources/models/default/promos.xml",
+		"/Users/miko/projects/ph/server/PHApp.hx",
+		"/Users/miko/projects/ph/server/models/GameModel.hx",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/GameModel.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/State/HeroInstanceData.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/DropItemOpenWindow/DropItemOpenWindow.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyRecipes/AlchemyRecipeTargetMultiWidget.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MainScreen/MainScreen.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/FuseSelectPopup/FuseSelectPopup.cs",
+		"/Users/miko/projects/ph/server/resources/models/default/strongholds.xml",
+		"/Users/miko/projects/ph/server/logic/StrongholdManager.hx",
+		"/Users/miko/projects/ph/server/models/HeroFusionCost.hx",
+		"/Users/miko/projects/ph/server/yawf/yawf/Util.hx",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MiniGameVictory/MiniGameVictory.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/AlchemyRecipeInfoModel.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/EventView/EventsView-AlchemyPanel/AlchemyEventPanel.cs",
+		"/Users/miko/projects/ph/server/models/alchemy/AlchemyRecipe.hx",
+		"/Users/miko/projects/ph/client/Assets/Editor/AutoBuilder.cs",
+		"/Users/miko/projects/ph/client/Assets/Plugins/HockeyAppUnity-Scripts/HockeyAppIOS.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/EventView/EventsView.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Model/AlchemyRecipe.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/BoosterShop/BoosterShop.cs",
+		"/Users/miko/projects/ph/scripts/src/ph/windows/MainScreen.hx",
+		"/Users/miko/projects/ph/client/Assets/Plugin/HockeyAppUnityIOS/HockeyAppUnity-Scripts/HockeyAppIOS.cs",
+		"/Users/miko/projects/ph/server/auth/FacebookUtils.hx",
+		"/Users/miko/projects/ph/client/Assets/Scripts/FacebookUtils.cs",
+		"/Users/miko/projects/ph/client/Assets/Plugins/AmazonABTests/AmazonABTests.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/AlchemyRecipes/AlchemyRecipesScreen.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/PHAmazonAbTests.cs",
+		"/Users/miko/projects/ph/client/Assets/Plugins/HockeyAppUnity-Scripts/HockeyAppAndroid.cs",
+		"/Users/miko/projects/ph/client/Assets/Scripts/Payments.cs",
+		"/Users/miko/projects/ph/client/Assets/Resources/UI/MenuPopup/MenuPopup.cs",
+		"/Users/miko/projects/ph/client/Assets/Tune/Editor/TunePostBuildTrigger.cs",
+		"/Users/miko/projects/ph/client/Assets/Tune/Scripts/TuneAndroid.cs",
+		"/Users/miko/projects/ph/client/Assets/Plugins/StoreKit/StoreKitBinding.cs",
+		"/Users/miko/projects/ph/client/Assets/Plugins/StoreKit/StoreKitManager.cs"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/Users/miko/projects/ph/server/yawf/yawf",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"products",
+			"HeroChooseResult",
+			"gridLa",
+			"centralSlotGlow",
+			"mana",
+			"heroes",
+			"recipeObject",
+			"heroesRecipes",
+			"recipes",
+			"scrollContent",
+			"scrollPanel",
+			"</products>",
+			"<?xml version='1.0' encoding='UTF-8'?>\n<alchemy>\n    <recipes map=\"recipe\">\n        <recipe id=\"knightChampion\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_knightChampion</name>\n            <pointsToShop>true</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>rKnight1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>wKnight1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gKnight1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bKnight1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uKnight1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>wChampion1</product>\n            </products>\n        </recipe>\n        <recipe id=\"ladyChampion\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_ladyChampion</name>\n            <pointsToShop>false</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>rLady1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uLady1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bLady1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>wLady1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gLady1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>gChampion1</product>\n            </products>\n        </recipe>\n        <recipe id=\"warlockChampion\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_warlockChampion</name>\n            <pointsToShop>true</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>rWarlock1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uWarlock1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>wWarlock1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gWarlock1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bWarlock1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>uChampion1</product>\n            </products>\n        </recipe>\n        <recipe id=\"guardianChampion\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_guardianChampion</name>\n            <pointsToShop>true</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>rGuardian1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uGuardian1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>wGuardian1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gGuardian1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bGuardian1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>bChampion1</product>\n            </products>\n        </recipe>\n        <recipe id=\"assassinChampion\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_assassinChampion</name>\n            <pointsToShop>true</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>rAssassin1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uAssassin1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>wAssassin1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gAssassin1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bAssassin1</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>rChampion1</product>\n            </products>\n        </recipe>\n        <recipe id=\"rWarlock1\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_rWarlock1</name>\n            <pointsToShop>true</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>wImp2</heroModelId>\n                    <quantity>8</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>rImp2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uImp2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bMob2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gImp2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>rWarlock1</product>\n            </products>\n        </recipe>\n        <recipe id=\"gAssassin1\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_gAssassin1</name>\n            <pointsToShop>true</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>uSpider2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>rSpider2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uSpider2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bSpider2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gSpider2</heroModelId>\n                    <quantity>8</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>gAssassin1</product>\n            </products>\n        </recipe>\n        <recipe id=\"uGuardian1\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_uGuardian1</name>\n            <pointsToShop>true</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>uShieldBearer2</heroModelId>\n                    <quantity>8</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>rShieldBearer2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uShieldBearer2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bShieldBearer2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gShieldBearer2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>uGuardian1</product>\n            </products>\n        </recipe>\n        <recipe id=\"bKnight1\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_bKnight1</name>\n            <pointsToShop>true</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>uWarrior2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>rWarrior2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uWarrior2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bWarrior2</heroModelId>\n                    <quantity>8</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gWarrior2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>bKnight1</product>\n            </products>\n        </recipe>\n        <recipe id=\"wLady1\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_wLady1</name>\n            <pointsToShop>true</pointsToShop>\n            <type>temporary</type>\n            <numRequiredIngredients>5</numRequiredIngredients>\n            <displayOrder>0</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>wMob2</heroModelId>\n                    <quantity>8</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>rFunguri2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uFunguri2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>bFunguri2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gMob2</heroModelId>\n                    <quantity>1</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>wLady1</product>\n            </products>\n        </recipe>\n        <recipe id=\"gAzadbur2\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_gAzadbur2</name>\n            <pointsToShop>false</pointsToShop>\n            <type>persistent</type>\n            <numRequiredIngredients>1</numRequiredIngredients>\n            <displayOrder>8</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>gAzadbur2</heroModelId>\n                    <quantity>2</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gAzadurun2</heroModelId>\n                    <quantity>2</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gAzadgal2</heroModelId>\n                    <quantity>2</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>gAzadbur2</product>\n                <product>gAzadurun2</product>\n                <product>gAzadgal2</product>\n            </products>\n        </recipe>\n        <recipe id=\"bGolem2\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_bGolem2</name>\n            <pointsToShop>false</pointsToShop>\n            <type>persistent</type>\n            <numRequiredIngredients>1</numRequiredIngredients>\n            <displayOrder>5</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>gGolem2</heroModelId>\n                    <quantity>5</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>bGolem2</product>\n            </products>\n        </recipe>\n        <recipe id=\"rGolem2\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_rGolem2</name>\n            <pointsToShop>false</pointsToShop>\n            <type>persistent</type>\n            <numRequiredIngredients>1</numRequiredIngredients>\n            <displayOrder>6</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>bGolem2</heroModelId>\n                    <quantity>5</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>rGolem2</product>\n            </products>\n        </recipe>\n        <recipe id=\"uGolem2\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_uGolem2</name>\n            <pointsToShop>false</pointsToShop>\n            <type>persistent</type>\n            <numRequiredIngredients>1</numRequiredIngredients>\n            <displayOrder>7</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>rGolem2</heroModelId>\n                    <quantity>5</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>uGolem2</product>\n            </products>\n        </recipe>\n        <recipe id=\"evoLightAndFire1\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_evoLightAndFire1</name>\n            <pointsToShop>false</pointsToShop>\n            <type>persistent</type>\n            <numRequiredIngredients>1</numRequiredIngredients>\n            <displayOrder>1</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>wSoul1</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>wSpiritOfLife1</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>rSpiritOfWildness1</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>rSpiritOfMagic1</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>wSoul1</product>\n                <product>wSpiritOfLife1</product>\n                <product>rSpiritOfWildness1</product>\n                <product>rSpiritOfMagic1</product>\n            </products>\n        </recipe>\n        <recipe id=\"evoOfBattle1\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_evoOfBattle1</name>\n            <pointsToShop>false</pointsToShop>\n            <type>persistent</type>\n            <numRequiredIngredients>1</numRequiredIngredients>\n            <displayOrder>2</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>bSpiritOfWar1</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uSpiritOfProtection1</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gSpiritOfCunning1</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>bSpiritOfWar1</product>\n                <product>uSpiritOfProtection1</product>\n                <product>gSpiritOfCunning1</product>\n            </products>\n        </recipe>\n        <recipe id=\"evoLightAndFire2\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_evoLightAndFire2</name>\n            <pointsToShop>false</pointsToShop>\n            <type>persistent</type>\n            <numRequiredIngredients>1</numRequiredIngredients>\n            <displayOrder>3</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>wSoul2</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>wSpiritOfLife2</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>rSpiritOfWildness2</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>rSpiritOfMagic2</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>wSoul2</product>\n                <product>wSpiritOfLife2</product>\n                <product>rSpiritOfWildness2</product>\n                <product>rSpiritOfMagic2</product>\n            </products>\n        </recipe>\n        <recipe id=\"evoOfBattle2\">\n            <shardsCost>0</shardsCost>\n            <name>recipe_evoOfBattle2</name>\n            <pointsToShop>false</pointsToShop>\n            <type>persistent</type>\n            <numRequiredIngredients>1</numRequiredIngredients>\n            <displayOrder>4</displayOrder>\n            <ingredients array=\"ingredient\">\n                <ingredient>\n                    <heroModelId>bSpiritOfWar2</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>uSpiritOfProtection2</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n                <ingredient>\n                    <heroModelId>gSpiritOfCunning2</heroModelId>\n                    <quantity>3</quantity>\n                </ingredient>\n            </ingredients>\n            <products array=\"product\">\n                <product>bSpiritOfWar2</product>\n                <product>uSpiritOfProtection2</product>\n                <product>gSpiritOfCunning2</product>\n            </products>\n        </recipe>\n    </recipes>\n    <weeks map=\"week\">\n        <week id=\"knightChampion\">\n            <enabled>true</enabled>\n            <recipeId>knightChampion</recipeId>\n            <showInSchedule>true</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n        <week id=\"ladyChampion\">\n            <enabled>true</enabled>\n            <recipeId>ladyChampion</recipeId>\n            <showInSchedule>true</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n        <week id=\"warlockChampion\">\n            <enabled>true</enabled>\n            <recipeId>warlockChampion</recipeId>\n            <showInSchedule>true</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n        <week id=\"guardianChampion\">\n            <enabled>true</enabled>\n            <recipeId>guardianChampion</recipeId>\n            <showInSchedule>true</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n        <week id=\"assassinChampion\">\n            <enabled>true</enabled>\n            <recipeId>assassinChampion</recipeId>\n            <showInSchedule>true</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n        <week id=\"rWarlock1\">\n            <enabled>true</enabled>\n            <recipeId>rWarlock1</recipeId>\n            <showInSchedule>false</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n        <week id=\"gAssassin1\">\n            <enabled>true</enabled>\n            <recipeId>gAssassin1</recipeId>\n            <showInSchedule>false</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n        <week id=\"uGuardian1\">\n            <enabled>true</enabled>\n            <recipeId>uGuardian1</recipeId>\n            <showInSchedule>false</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n        <week id=\"bKnight1\">\n            <enabled>true</enabled>\n            <recipeId>bKnight1</recipeId>\n            <showInSchedule>false</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n        <week id=\"wLady1\">\n            <enabled>true</enabled>\n            <recipeId>wLady1</recipeId>\n            <showInSchedule>false</showInSchedule>\n            <startHour>114</startHour>\n            <endHour>167</endHour>\n        </week>\n    </weeks>\n    <cycles map=\"cycle\">\n        <cycle id=\"championCycle\">\n            <enabled>true</enabled>\n            <lengthInWeeks>5</lengthInWeeks>\n            <weeks array=\"week\">\n                <week>\n                    <weekModelId>knightChampion</weekModelId>\n                    <weekOffset>4</weekOffset>\n                </week>\n                <week>\n                    <weekModelId>ladyChampion</weekModelId>\n                    <weekOffset>0</weekOffset>\n                </week>\n                <week>\n                    <weekModelId>warlockChampion</weekModelId>\n                    <weekOffset>1</weekOffset>\n                </week>\n                <week>\n                    <weekModelId>guardianChampion</weekModelId>\n                    <weekOffset>2</weekOffset>\n                </week>\n                <week>\n                    <weekModelId>assassinChampion</weekModelId>\n                    <weekOffset>3</weekOffset>\n                </week>\n                <week>\n                    <weekModelId>bKnight1</weekModelId>\n                    <weekOffset>4</weekOffset>\n                </week>\n                <week>\n                    <weekModelId>wLady1</weekModelId>\n                    <weekOffset>0</weekOffset>\n                </week>\n                <week>\n                    <weekModelId>rWarlock1</weekModelId>\n                    <weekOffset>1</weekOffset>\n                </week>\n                <week>\n                    <weekModelId>uGuardian1</weekModelId>\n                    <weekOffset>2</weekOffset>\n                </week>\n                <week>\n                    <weekModelId>gAssassin1</weekModelId>\n                    <weekOffset>3</weekOffset>\n                </week>\n            </weeks>\n        </cycle>\n    </cycles>\n</alchemy>",
+			"</products>.*</recipe>",
+			"MarkMessageAsRead",
+			"MessageAttachmentType",
+			"count",
+			"Superceded",
+			"todo",
+			"CallCont",
+			"Purchase",
+			"GetChest",
+			"grantPro",
+			"subscription_vip",
+			"subscription_vip.dev",
+			"Init",
+			"goldpacks",
+			"Stronghold",
+			"gui_pvpRankingMenu_outOfRanking",
+			"goldpacksShop",
+			"_.WindowsCatalogue.goldpacksShop",
+			"Shop",
+			"Scroll",
+			"GridLayout",
+			"backpackSlots",
+			"virtualTokensContainer",
+			"virtual",
+			"group",
+			"COLLEC",
+			"UpdateBackpa",
+			"virtualTokensContainer",
+			"collection",
+			"Slots",
+			"Spells",
+			"Tokens",
+			"InitFille",
+			"virtualTokens",
+			"tokensLayout",
+			"slotPrefab",
+			"Debug",
+			"slots",
+			"updateSlots",
+			"usedIngredien",
+			"usedIngredients",
+			"ReadyToTransmute",
+			"usedSlots",
+			"UpdateSlot",
+			"click",
+			"Listener",
+			"UpdateSlot",
+			"UpdateSlots",
+			"UpdateSlot",
+			"state",
+			"UpdateSlot",
+			"UpdatePentagram",
+			"timeToEnd",
+			"ts",
+			"hockey",
+			"mat",
+			"Tune",
+			"googleAna",
+			"google",
+			"googl",
+			"Google",
+			"fuse",
+			"Structure",
+			"<heroFusionGoldCostMultiplier>\\d*</heroFusionGoldCostMultiplier>",
+			"<heroFusionSilverCostMultiplier>\\d*</heroFusionSilverCostMultiplier>",
+			"Unlock",
+			"UnlockPvp",
+			"UpdateButtons",
+			"Version",
+			"getAvailable",
+			"alchemyRecipe",
+			"getCurrentActivePromoHero",
+			"getCurrentActivePromoWeeks",
+			"ladyC",
+			"Recipe",
+			"getSche",
+			"onevent",
+			"event",
+			"state",
+			"alchemyRecipesInfo",
+			"alchemy",
+			"alchemt",
+			"Recipe",
+			"teaser",
+			"zuriPromo",
+			"GetBaseURL",
+			"GetAppVersion",
+			"TrySendLogs",
+			"GameViewLoaded",
+			"StartHocke",
+			"TrySendLogs",
+			"OnHandle",
+			"Amazon",
+			"[PostProcessBuild]",
+			"ONError",
+			"ONErrror",
+			"OnError",
+			"<<<",
+			"OnError",
+			"GoogleIABProxyActivity",
+			"IAB",
+			"OnError",
+			"grap",
+			"ClaimAppleReceipt",
+			"payments",
+			"Init",
+			"Recipt",
+			"purchaseSuccess",
+			"force",
+			"public",
+			"Payments",
+			"public",
+			"payments",
+			"PurchaseSuccess",
+			"ProductGranted"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"</products>\n<productType>hero</productType>",
+			"<heroFusionGoldCurveId>goldUniversalCost</heroFusionGoldCurveId>",
+			"<heroFusionSilverCurveId>silverUniversalCost</heroFusionSilverCurveId>",
+			"<component>\n						<className>ph.heroComponents.LoveComponent</className>\n						<paramsMap map=\"param\">\n						</paramsMap>\n					</component></components>",
+			"                   <component>\n						<className>ph.heroComponents.LoveComponent</className>\n						<paramsMap map=\"param\">\n						</paramsMap>\n					</component></components>",
+			"                    <component>\n						<className>ph.heroComponents.LoveComponent</className>\n						<paramsMap map=\"param\">\n						</paramsMap>\n					</component></components>",
+			"<value>bodySlamOfLove",
+			"Util.Log",
+			"<type>PWR",
+			"PWR",
+			"<type>TRAIT",
+			"<defaultUpgrades array=\"upgrade\">\n			<upgrade>\n				<id>defaultAttack</id>\n				<type>ATTACK</type>\n				<value>11</value>\n				<cost>0</cost>\n				<description>+11 PWR</description>\n				<icon>Icons/Placeholder</icon>\n			</upgrade>\n			<upgrade>\n				<id>defaultHp</id>\n				<type>HP</type>\n				<value>8</value>\n				<cost>0</cost>\n				<description>+8 HP</description>\n				<icon>Icons/Placeholder</icon>\n			</upgrade>\n			<upgrade>\n				<id>defaultTrait</id>\n				<type>Trait</type>\n				<value>bodySlam</value>\n				<cost>0</cost>\n				<description>Jebs!</description>\n				<icon>Icons/Placeholder</icon>\n			</upgrade>\n		</defaultUpgrades>\n		<upgrades array=\"upgrade\">\n			<upgrade>\n				<id>someAttackUpgrade</id>\n				<type>ATTACK</type>\n				<value>16</value>\n				<cost>5</cost>\n				<description>+11 PWR</description>\n				<icon>Icons/Placeholder</icon>\n			</upgrade>\n			<upgrade>\n				<id>someHpUpgrade</id>\n				<type>HP</type>\n				<value>20</value>\n				<cost>6</cost>\n				<description>+8 HP</description>\n				<icon>Icons/Placeholder</icon>\n			</upgrade>\n			<upgrade>\n				<id>someTraitUpgrade</id>\n				<type>Trait</type>\n				<value>bodySlam</value>\n				<cost>10</cost>\n				<description>Jebs!</description>\n				<icon>Icons/Placeholder</icon>\n				<components array=\"component\">\n				</components>\n			</upgrade>\n		</upgrades>",
+			"		<defaultUpgrades array=\"upgrade\">\n			<upgrade>\n				<id>defaultAttack</id>\n				<type>ATTACK</type>\n				<value>11</value>\n				<cost>0</cost>\n				<description>+11 PWR</description>\n				<icon>Icons/Placeholder</icon>\n			</upgrade>\n			<upgrade>\n				<id>defaultHp</id>\n				<type>HP</type>\n				<value>8</value>\n				<cost>0</cost>\n				<description>+8 HP</description>\n				<icon>Icons/Placeholder</icon>\n			</upgrade>\n			<upgrade>\n				<id>defaultTrait</id>\n				<type>Trait</type>\n				<value>bodySlam</value>\n				<cost>0</cost>\n				<description>Jebs!</description>\n				<icon>Icons/Placeholder</icon>\n			</upgrade>\n		</defaultUpgrades>",
+			"<bgImg>backgrounds/",
+			"</rewards>\\n\\t\\t<gainedXp>100</gainedXp>\\n",
+			"</rewards>\\n\\t\\t<xp>100</x>\\n",
+			"</rewards>\\n\\t\\t<xp>100</x>",
+			"</rewards>\\n\\t\\t\\t<xp>100</x",
+			"",
+			"<useCost>$1</useCost>",
+			"<activationCost>$1</activationCost>",
+			"<tokenImg>$1</tokenImg>\n    <artImg>$1</artImg>\n    <bgImg>$1</bgImg>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "asd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "Packages/Haxe/Support/Hxml.sublime-build",
+	"project": "tge.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"playermana",
+				"server/logic/PlayerManager.hx"
+			],
+			[
+				"main",
+				"server/services/MainService.hx"
+			],
+			[
+				"alchemype",
+				"Assets/Resources/UI/AlchemyPentagram/AlchemyPentagram.cs"
+			],
+			[
+				"spelltok",
+				"Assets/Resources/UI/AlchemyRecipes/TargetSlots/SpellToken.cs"
+			],
+			[
+				"chooser",
+				"Assets/Resources/UI/AlchemyChooseResultPopup/ChooseResult.cs"
+			],
+			[
+				"herochoo",
+				"Assets/Resources/UI/AlchemyChooseResultPopup/HeroChooseResult.cs"
+			],
+			[
+				"alchemycho",
+				"Assets/Resources/UI/AlchemyChooseResultPopup/AlchemyChooseResultPopup.cs"
+			],
+			[
+				"alchemt",
+				"Assets/Resources/UI/AlchemyPentagram/AlchemyPentagram.cs"
+			],
+			[
+				"alc",
+				"server/resources/models/default/alchemy.xml"
+			],
+			[
+				"alche",
+				"server/resources/models/default/alchemy.xml"
+			],
+			[
+				"alchemypent",
+				"Assets/Resources/UI/AlchemyPentagram/AlchemyPentagram.cs"
+			],
+			[
+				"game.",
+				"server/resources/models/default/game.xml"
+			],
+			[
+				"spells",
+				"server/resources/models/default/spells.xml"
+			],
+			[
+				"spellmode",
+				"Assets/Scripts/Model/SpellModel.cs"
+			],
+			[
+				"",
+				"Assets/Scripts/PHChuiLayout.cs"
+			],
+			[
+				"spellto",
+				"Assets/Resources/UI/AlchemyRecipes/TargetSlots/SpellToken.cs"
+			],
+			[
+				"chuila",
+				"Assets/Scripts/PHChuiLayout.cs"
+			],
+			[
+				"spellpick",
+				"Assets/Resources/UI/SpellsPickerPopup/SpellsPickerPopup.cs"
+			],
+			[
+				"spellp",
+				"Assets/Resources/UI/SpellPreviewPopup/SpellPreviewPopup.cs"
+			],
+			[
+				"spellpickerp",
+				"Assets/Resources/UI/SpellsPickerPopup/SpellsPickerPopup.cs"
+			],
+			[
+				"alchemyr",
+				"Assets/Scripts/Model/AlchemyRecipe.cs"
+			],
+			[
+				"windows",
+				"Assets/Resources/UI/Common/Windows.cs"
+			],
+			[
+				"spellt",
+				"Assets/Resources/UI/AlchemyRecipes/TargetSlots/SpellToken.cs"
+			],
+			[
+				"model",
+				"Assets/Scripts/Model/Model.cs"
+			],
+			[
+				"alchemyspell",
+				"Assets/Resources/UI/AlchemyRecipes/TargetSlots/AlchemySpellProductTarget.cs"
+			],
+			[
+				"alch",
+				"Assets/Scripts/Model/AlchemyRecipe.cs"
+			],
+			[
+				"alchemyrec",
+				"Assets/Resources/UI/AlchemyRecipes/AlchemyRecipesScreen.cs"
+			],
+			[
+				"alchemy.xm",
+				"server/resources/models/default/alchemy.xml"
+			],
+			[
+				"spellpicker",
+				"Assets/Resources/UI/SpellsPickerPopup/SpellsPickerPopup.cs"
+			],
+			[
+				"spellmod",
+				"Assets/Scripts/Model/SpellModel.cs"
+			],
+			[
+				"spellsm",
+				"Assets/Scripts/Model/SpellsModel.cs"
+			],
+			[
+				"glowe",
+				"Assets/Resources/UI/AlchemyRecipes/TargetSlots/GlowedSpell.cs"
+			],
+			[
+				"tabmana",
+				"Assets/Chui/Controls/Tabs/SLBXTabs/SLBXTabManager.cs"
+			],
+			[
+				"alchemyre",
+				"Assets/Scripts/Model/AlchemyRecipe.cs"
+			],
+			[
+				"inje",
+				"Assets/Chui/Injector.cs"
+			],
+			[
+				"alchemyhero",
+				"Assets/Resources/UI/AlchemyRecipes/TargetSlots/AlchemyHeroProductTarget.cs"
+			],
+			[
+				"per",
+				"Assets/Resources/UI/AlchemyRecipes/PersistentRecipe.cs"
+			],
+			[
+				"spellspi",
+				"Assets/Resources/UI/SpellsPickerPopup/SpellsPickerPopup.cs"
+			],
+			[
+				"alchemypanel",
+				"Assets/Resources/UI/AlchemyRecipes/AlchemyRecipePanel.cs"
+			],
+			[
+				"gridl",
+				"Assets/Chui/GridLayout.cs"
+			],
+			[
+				"state",
+				"Assets/Scripts/State/State.cs"
+			],
+			[
+				"tempo",
+				"Assets/Resources/UI/AlchemyRecipes/TemporaryRecipe.cs"
+			],
+			[
+				"persis",
+				"Assets/Resources/UI/AlchemyRecipes/PersistentRecipe.cs"
+			],
+			[
+				"tempora",
+				"Assets/Resources/UI/AlchemyRecipes/TemporaryRecipe.cs"
+			],
+			[
+				"gridla",
+				"Assets/Chui/GridLayout.cs"
+			],
+			[
+				"alchemyrecipesc",
+				"Assets/Resources/UI/AlchemyRecipes/AlchemyRecipesScreen.cs"
+			],
+			[
+				"mark",
+				"Assets/Scripts/DTO/MessageMarkedDTO.cs"
+			],
+			[
+				"mains",
+				"server/services/MainService.hx"
+			],
+			[
+				"objectma",
+				"server/yawf/yawf/ObjectMapper.hx"
+			],
+			[
+				"service.",
+				"server/yawf/yawf/Service.hx"
+			],
+			[
+				"message",
+				"Assets/Resources/UI/MessageHub/Message.cs"
+			],
+			[
+				"spells.",
+				"server/resources/models/default/spells.xml"
+			],
+			[
+				"colla",
+				"Assets/Resources/UI/MessageHub/CollapsedMessage.cs"
+			],
+			[
+				"coll",
+				"Assets/Resources/UI/MessageHub/CollapsedMessage.cs"
+			],
+			[
+				"playerattachmen",
+				"Assets/Scripts/State/PlayerMessageAttachment.cs"
+			],
+			[
+				"model.",
+				"Assets/Scripts/Model/Model.cs"
+			],
+			[
+				"herotokenw",
+				"Assets/Resources/UI/Common/HeroTokenWidget.cs"
+			],
+			[
+				"attac",
+				"Assets/Resources/UI/MessageHub/AttachmentHero.cs"
+			],
+			[
+				"spella",
+				"Assets/Resources/UI/MessageHub/SpellAttachment.cs"
+			],
+			[
+				"messagema",
+				"Assets/Scripts/DTO/MessageMarkedDTO.cs"
+			],
+			[
+				"dto.cs",
+				"Assets/Scripts/DTO/MessageMarkedDTO.cs"
+			],
+			[
+				"collap",
+				"Assets/Resources/UI/MessageHub/CollapsedMessage.cs"
+			],
+			[
+				"serverac",
+				"Assets/Scripts/ServerActions.cs"
+			],
+			[
+				"attachment",
+				"Assets/Resources/UI/MessageHub/AttachmentCurrency.cs"
+			],
+			[
+				"attachmenthero",
+				"Assets/Resources/UI/MessageHub/AttachmentHero.cs"
+			],
+			[
+				"playermessag",
+				"Assets/Scripts/State/PlayerMessageAttachment.cs"
+			],
+			[
+				"messagehuba",
+				"Assets/Resources/UI/MessageHub/IMessageHubAttachment.cs"
+			],
+			[
+				"messagehub",
+				"Assets/Resources/UI/MessageHub/MessageHub.cs"
+			],
+			[
+				"message.",
+				"Assets/Resources/UI/MessageHub/Message.cs"
+			],
+			[
+				"mainser",
+				"server/services/MainService.hx"
+			],
+			[
+				"itemt",
+				"server/models/ItemType.hx"
+			],
+			[
+				"storespellm",
+				"Assets/Scripts/Model/StoreSpellModel.cs"
+			],
+			[
+				"stores",
+				"server/models/spells/StoreSpellModel.hx"
+			],
+			[
+				"model.c",
+				"Assets/Scripts/Model/Model.cs"
+			],
+			[
+				"modelda",
+				"Assets/Scripts/Model/ModelData.cs"
+			],
+			[
+				"error",
+				"Assets/Scripts/Errors.cs"
+			],
+			[
+				"servi",
+				"Assets/Scripts/Service.cs"
+			],
+			[
+				"minigamesta",
+				"server/models/MiniGameStatsData.hx"
+			],
+			[
+				"server",
+				"Assets/Scripts/ServerActions.cs"
+			],
+			[
+				"playerdata",
+				"Assets/Scripts/State/PlayerData.cs"
+			],
+			[
+				"modeld",
+				"server/models/ModelData.hx"
+			],
+			[
+				"playerdaa",
+				"server/models/PlayerData.hx"
+			],
+			[
+				"redisha",
+				"server/yawf/yawf/redis/RedisNumberHashKey.hx"
+			],
+			[
+				"spellsh",
+				"Assets/Resources/UI/GoldpacksShop/SpellsShopScreen.cs"
+			],
+			[
+				"playerma",
+				"server/logic/PlayerManager.hx"
+			],
+			[
+				"chest",
+				"Assets/Resources/UI/GoldpacksShop/ChestShopScreen.cs"
+			],
+			[
+				"service",
+				"Assets/Scripts/Service.cs"
+			],
+			[
+				"spell",
+				"Assets/Scripts/Model/SpellsModel.cs"
+			],
+			[
+				"shop",
+				"Assets/Resources/UI/GoldpacksShop/ShopScreen.cs"
+			],
+			[
+				"shops",
+				"Assets/Resources/UI/GoldpacksShop/ShopScreen.cs"
+			],
+			[
+				"goldpacksh",
+				"Assets/Resources/UI/GoldpacksShop/GoldpacksShopWithPayments.cs"
+			],
+			[
+				"storespellmodel",
+				"Assets/Scripts/Model/StoreSpellModel.cs"
+			],
+			[
+				"spellsmo",
+				"Assets/Scripts/Model/SpellsModel.cs"
+			],
+			[
+				"storesp",
+				"Assets/Scripts/Model/StoreSpellModel.cs"
+			],
+			[
+				"storespel",
+				"server/models/spells/StoreSpellModel.hx"
+			],
+			[
+				"chestpanel",
+				"Assets/Resources/UI/GoldpacksShop/ShopChestPanel.cs"
+			],
+			[
+				"shopspe",
+				"Assets/Resources/UI/GoldpacksShop/ShopSpellPanel.cs"
+			],
+			[
+				"specialoffe",
+				"Assets/Resources/UI/GoldpacksShop/SpecialOffersShopScreen.cs"
+			],
+			[
+				"spellspa",
+				"Assets/Resources/UI/GoldpacksShop/SpellsPart.cs"
+			],
+			[
+				"shopsc",
+				"Assets/Resources/UI/GoldpacksShop/ShopScreen.cs"
+			],
+			[
+				"payments.",
+				"server/resources/models/default/payments.xml"
+			],
+			[
+				"productmode",
+				"server/models/ProductModel.hx"
+			],
+			[
+				"game.x",
+				"server/resources/models/default/game.xml"
+			],
+			[
+				"phpa",
+				"Assets/Scripts/PHPayments.cs"
+			],
+			[
+				"payments.xml",
+				"server/resources/models/default/payments.xml"
+			],
+			[
+				"product.hx",
+				"server/models/ProductType.hx"
+			],
+			[
+				"chestshop",
+				"Assets/Resources/UI/GoldpacksShop/ChestShopScreen.cs"
+			],
+			[
+				"goldpackshopsc",
+				"Assets/Resources/UI/GoldpacksShop/GoldpackShopScreen.cs"
+			],
+			[
+				"semap",
+				"Assets/Scripts/Tools/Semaphore.cs"
+			],
+			[
+				"goldpacksshopwi",
+				"Assets/Resources/UI/GoldpacksShop/GoldpacksShopWithPayments.cs"
+			],
+			[
+				"goldpackshop",
+				"Assets/Resources/UI/GoldpacksShop/GoldpackShopScreen.cs"
+			],
+			[
+				"minigames",
+				"server/models/MiniGameStatsData.hx"
+			],
+			[
+				"phstats",
+				"server/stats/PHStats.hx"
+			],
+			[
+				"prod-io",
+				"server/configs/prod-ios.json"
+			],
+			[
+				"prod",
+				"server/configs/prod-android.json"
+			],
+			[
+				"layo",
+				"server/admin/templates/Layout"
+			],
+			[
+				"bottom",
+				"Assets/Resources/UI/BottomBar/BottomBar.cs"
+			],
+			[
+				"chuil",
+				"Assets/Scripts/PHChuiLayout.cs"
+			],
+			[
+				"virtual",
+				"Assets/Chui/VirtualElementGroup.cs"
+			],
+			[
+				"windows.",
+				"Assets/Resources/UI/Common/Windows.cs"
+			],
+			[
+				"teamed",
+				"Assets/Resources/UI/EditTeam/EditTeamScreen.cs"
+			],
+			[
+				"editte",
+				"Assets/Resources/UI/EditTeam/EditTeamSlot.cs"
+			],
+			[
+				"edittea",
+				"Assets/Resources/UI/EditTeam/EditTeamScreen.cs"
+			],
+			[
+				"tutorial",
+				"Assets/Resources/UI/TutorialMode/TutorialMode.cs"
+			],
+			[
+				"alechemype",
+				"Assets/Resources/UI/AlchemyPentagram/AlchemyPentagram.cs"
+			],
+			[
+				"playerman",
+				"server/logic/PlayerManager.hx"
+			],
+			[
+				"alchme",
+				"server/resources/models/default/alchemy.xml"
+			],
+			[
+				"loginp",
+				"Assets/Scripts/LoginProcedure.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

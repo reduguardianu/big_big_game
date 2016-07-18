@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns": ["*.prefab", "*.asset", "*.meta"],
+			"follow_symlinks": true,
+			"path": "Assets"
+		}
+		
+	],
+	"settings": {
+	},
+	"solution_file": "the_great_escape.sln"
+}
