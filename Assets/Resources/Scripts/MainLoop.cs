@@ -26,6 +26,7 @@ public class MainLoop : MonoBehaviour {
 		players[1] = player2.GetComponent<Player>();
 		players[1].Init(stageInit, 0);
 
+		Physics.IgnoreCollision(players[0].GetComponent<Collider>(), players[1].GetComponent<Collider>());
 	}
 
 	void Won(Player player) {
@@ -55,9 +56,7 @@ public class MainLoop : MonoBehaviour {
 			}
 		}
 
-		if (cam.transform.position.x < moreAdvanced.distance) {
-			cam.transform.position = new Vector3(moreAdvanced.distance, cam.transform.position.y, cam.transform.position.z);
-		}
+		cam.GetComponent<CameraOperator>().target = moreAdvanced.gameObject;
 
 		if (moreAdvanced.distance >= stageInit.finish.transform.position.x) {
 			Won (moreAdvanced);
