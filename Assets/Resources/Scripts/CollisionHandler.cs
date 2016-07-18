@@ -5,6 +5,8 @@ using System;
 public class CollisionHandler : MonoBehaviour {
 
 	public event Action<GameChangingCollisionInfo> importantCollision;
+
+	public event Action<GameObject> collisionsEnded;
 	void OnCollisionEnter (Collision collider) {
 		GameChangingCollisionInfo collisionInfo = collider.gameObject.GetComponent<GameChangingCollisionInfo>();
 		if (collisionInfo != null)
@@ -13,6 +15,13 @@ public class CollisionHandler : MonoBehaviour {
 			{
 				importantCollision(collisionInfo);
 			}
-		} 
+		}
+	}
+
+	void onTriggerExit(Collision collider) {
+		if (collisionsEnded != null)
+		{
+			collisionsEnded(collider.gameObject);
+		}
 	}
 }
