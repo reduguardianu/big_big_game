@@ -31,7 +31,6 @@ public class Player : MonoBehaviour {
     float offset;
 
     public Animator playerAnimation;
-
     public void Stop() {
 		GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         stopped = true;
