@@ -16,22 +16,24 @@ public class MainLoop : MonoBehaviour {
 		players = new Player[2];
 		GameObject player = Instantiate<GameObject>(stageInit.playerAPrefab);
 		player.transform.position = stageInit.spawn.transform.position;
-
 		players[0] = player.GetComponent<Player>();
 		players[0].Init(stageInit, stageInit.startOffset);
+        players[0].GetComponent<Player>().playerAnimation.SetTrigger("Run");
 
-		GameObject player2 = Instantiate<GameObject>(stageInit.playerBPrefab);
+        GameObject player2 = Instantiate<GameObject>(stageInit.playerBPrefab);
 		player2.transform.position = stageInit.spawn.transform.position;
 
 		players[1] = player2.GetComponent<Player>();
 		players[1].Init(stageInit, 0);
+        players[1].GetComponent<Player>().playerAnimation.SetTrigger("Run");
 
-		Physics.IgnoreCollision(players[0].GetComponent<Collider>(), players[1].GetComponent<Collider>());
+        Physics.IgnoreCollision(players[0].GetComponent<Collider>(), players[1].GetComponent<Collider>());
 	}
 
 	void Won(Player player) {
 		foreach (Player p in players) {
 			p.Stop();
+            p.playerAnimation.SetTrigger("Idle");
 		}
 
 		Debug.Log("WON PLAYER " + player.name);
