@@ -13,6 +13,7 @@ public class StageConfig : MonoBehaviour {
 
 	[Header("Settings")]
 	public float maxSpeed;
+	public float speedHardCap;
 	public float acceleration;
 	public float startOffset;
 

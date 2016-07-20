@@ -14,15 +14,8 @@ public class Player : MonoBehaviour {
 
     bool stopped = false;
 
-	Dictionary<SpeedMod, float> speedMods;
-
-
-	float moddedAcc = 0;
-	float moddedMaxSpeed = 0;
-
 
 	float elapsed = 0;
-
 
 	bool initialized = false;
     public bool isOnGround;
@@ -31,6 +24,16 @@ public class Player : MonoBehaviour {
     float offset;
 
     public Animator playerAnimation;
+
+    public float CurrentVerticalSpeed {
+    	get {
+    		return GetComponent<Rigidbody>().velocity.x;
+    	}
+    	set {
+    		GetComponent<Rigidbody>().velocity = new Vector3(value, GetComponent<Rigidbody>().velocity.y);
+    	}
+    }
+
     public void Stop() {
 		GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         stopped = true;
@@ -38,10 +41,10 @@ public class Player : MonoBehaviour {
 
     public void Init(StageConfig s, float o) {
         offset = o;
+        gameObject.transform.position = new Vector3(offset, 0, 0);
 
 
 		collidedWith = new List<GameObject>();
-		speedMods = new Dictionary<SpeedMod, float>();
 		stage = s;
 
 		initialized = true;
@@ -62,45 +65,17 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnCollision(GameObject collided) {
-		var mods = collided.GetComponents<SpeedMod>();
-		if (mods.Length > 0) {
-			ApplySpeedMods(mods);
+		foreach (SpeedMod mod in collided.GetComponents<SpeedMod>()) {
+			CurrentVerticalSpeed =+ mod.x;
+			gameObject.GetComponent<Player>().playerAnimation.SetTrigger("Hit");
 		}
-	}
 
-	void ProccessSpeedMods() {
-		moddedMaxSpeed = stage.maxSpeed;
-		moddedAcc = stage.acceleration;
-
-        var sorted = speedMods.Keys.OrderBy(x => speedMods[x]);
-
-		foreach (SpeedMod speedMod in sorted) {
-			if (speedMods[speedMod] + speedMod.duration < elapsed) {
-				continue;
-			}
-
-			if (speedMod.accMul > 0) {
-				moddedAcc = moddedAcc * speedMod.accMul;
-			}
-			moddedAcc += speedMod.accAdd;
-
-			if (speedMod.maxSpeedMul > 0) {
-				moddedMaxSpeed = moddedMaxSpeed * speedMod.maxSpeedMul;
-			}
-			moddedMaxSpeed += speedMod.maxSpeedAdd;
-
+		foreach (Bumper mod in collided.GetComponents<Bumper>()) {
+			GetComponent<Rigidbody>().AddForce(new Vector3(mod.x, mod.y, 0));
+			gameObject.GetComponent<Player>().playerAnimation.SetTrigger("Hit");
 		}
+
 	}
-
-	void ApplySpeedMods(SpeedMod[] mods) {
-		foreach (SpeedMod mod in mods) {
-			speedMods[mod] = elapsed;
-			ProccessSpeedMods();
-			currentSpeed =  Mathf.Clamp(currentSpeed +  mod.oneTimeSpeed, 0, moddedMaxSpeed);
-
-		}
-	}
-
 
 
 	void Update() {
@@ -110,11 +85,16 @@ public class Player : MonoBehaviour {
 
 		elapsed += Time.deltaTime;
 
-		ProccessSpeedMods();
+		float delta = stage.acceleration * Time.deltaTime;
 
-		currentSpeed = Mathf.Clamp(currentSpeed + moddedAcc * Time.deltaTime, 0, moddedMaxSpeed);
-		distance = gameObject.transform.position.x + currentSpeed * Time.deltaTime;
-		gameObject.transform.position = new Vector3(distance, gameObject.transform.position.y, gameObject.transform.position.z);
+		if (CurrentVerticalSpeed > stage.maxSpeed) {
+			CurrentVerticalSpeed = Mathf.Max(CurrentVerticalSpeed - delta, stage.maxSpeed);
+		} else {
+			CurrentVerticalSpeed = Mathf.Min(CurrentVerticalSpeed + delta, stage.maxSpeed);
+		}
+
+		CurrentVerticalSpeed = Mathf.Min(CurrentVerticalSpeed, stage.speedHardCap);
+		distance = gameObject.transform.position.x - offset;
 	}
 
 
