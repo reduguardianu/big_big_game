@@ -32,7 +32,6 @@ public class MovementComponent : MonoBehaviour {
         {
             this.GetComponent<Rigidbody>().AddForce(new Vector3(60, 0, 0));
             dashUseTime = Time.time;
-            this.GetComponent<Player>().playerAnimation.SetTrigger("dash");
             particles.SetActive(true);
         }
 
