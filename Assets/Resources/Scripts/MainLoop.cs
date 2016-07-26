@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class MainLoop : MonoBehaviour {
 
-	public StageConfig stageInit;
+	public StageConfig stageConfig;
 
 	public Camera cam;
 
@@ -14,60 +15,73 @@ public class MainLoop : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		players = new Player[2];
-		GameObject player = Instantiate<GameObject>(stageInit.playerAPrefab);
-		player.transform.position = stageInit.spawn.transform.position;
+		GameObject player = Instantiate<GameObject>(stageConfig.playerAPrefab);
+		player.transform.position = stageConfig.spawn.transform.position;
 		players[0] = player.GetComponent<Player>();
-		players[0].Init(stageInit, stageInit.startOffset);
+		players[0].Init(stageConfig, stageConfig.startOffset);
         players[0].GetComponent<Player>().playerAnimation.SetTrigger("Run");
 
-        GameObject player2 = Instantiate<GameObject>(stageInit.playerBPrefab);
-		player2.transform.position = stageInit.spawn.transform.position;
+        GameObject player2 = Instantiate<GameObject>(stageConfig.playerBPrefab);
+		player2.transform.position = stageConfig.spawn.transform.position;
 
 		players[1] = player2.GetComponent<Player>();
-		players[1].Init(stageInit, 0);
+		players[1].Init(stageConfig, 0);
         players[1].GetComponent<Player>().playerAnimation.SetTrigger("Run");
 
-        Physics.IgnoreCollision(players[0].GetComponent<Collider>(), players[1].GetComponent<Collider>());
 	}
+
+	float winScreenCounter = 0;
+	Player winner;
 
 	void Won(Player player) {
 		foreach (Player p in players) {
 			p.Stop();
-            p.playerAnimation.SetTrigger("Idle");
 		}
 
 		Debug.Log("WON PLAYER " + player.name);
 		gameHasEnded = true;
+		winner = player;
 	}
+
+
 	
 	// Update is called once per frame
 	void Update () {
 		if (gameHasEnded) {
+			winScreenCounter += Time.deltaTime;
+			if (stageConfig.winScreenDelay < winScreenCounter) {
+				Application.LoadLevel(winner.winScreen);
+			}
 			return;
-		}
+		} 
 
 		for (int i = 0; i < players.Length; i++) {
+
 			if (players[i].hp <= 0) {
 				Won(players[(i + 1) % players.Length]);
 				return;
 			}
 		}
 
-		Player moreAdvanced = null;
-		foreach (Player player in players) {
-			if (player == null) {
-				continue;
-			}
 
-			if (moreAdvanced == null || moreAdvanced.distance < player.distance) {
-				moreAdvanced = player;
-			}
+		var first = players[0];
+		var second = players[1];
+		if (second.pos.x > first.pos.x) {
+			first = players[1];
+			second = players[0];
 		}
 
-		cam.GetComponent<CameraOperator>().target = moreAdvanced.gameObject;
+		if (first.pos.x - second.pos.x > stageConfig.penaltyDistance) {
+			second.SetPosX(first.pos.x - stageConfig.penaltyDistance);
+			second.PenaltyPunch();
+		}
 
-		if (moreAdvanced.distance >= stageInit.finish.transform.position.x) {
-			Won (moreAdvanced);
+		
+		cam.GetComponent<CameraOperator>().target = first.gameObject;
+
+
+		if (first.pos.x >= stageConfig.finish.transform.position.x) {
+			Won (first);
 		}
 	
 	}

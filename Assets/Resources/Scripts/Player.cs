@@ -5,11 +5,9 @@ using System.Linq;
 
 public class Player : MonoBehaviour {
 
-	[HideInInspector]
-	public float currentSpeed = 0;
-	[HideInInspector]
-	public float distance = 0;
 	public int hp;
+	public GameObject particles;
+	public string winScreen;
 	StageConfig stage;
 
     bool stopped = false;
@@ -18,34 +16,80 @@ public class Player : MonoBehaviour {
 	float elapsed = 0;
 
 	bool initialized = false;
+
+	float lastPenaltyPunch = 0;
+	float lastDash = 0;
+
+
     public bool isOnGround;
+    public bool isJumping;
 
 	List<GameObject> collidedWith;
     float offset;
 
     public Animator playerAnimation;
 
-    public float CurrentVerticalSpeed {
-    	get {
-    		return GetComponent<Rigidbody>().velocity.x;
+
+    Vector2 v = Vector2.zero;
+    public Vector2 pos = Vector2.zero;
+
+    float groundY;
+
+    void SetVx(float x) {
+    	v = new Vector3(Mathf.Max(x, 0), v.y);
+    }
+
+    void SetVy(float y) {
+    	v = new Vector3(v.x, y);
+    }
+
+    public void SetPosX(float x) {
+    	pos = new Vector3(x, pos.y);
+    }
+
+    void SetPosY(float y) {
+    	pos = new Vector3(pos.x, y);
+    }
+
+    float jumpTimestamp = -1f;
+
+    public void Jump() {
+    	if (isJumping) {
+    		return;
     	}
-    	set {
-    		GetComponent<Rigidbody>().velocity = new Vector3(value, GetComponent<Rigidbody>().velocity.y);
+    	jumpTimestamp = Time.time;
+    	isJumping = true;
+    }
+
+    public void Dash() {
+    	if (lastDash + stage.dashCooldown < elapsed) {
+    		SetVx(v.x + stage.dashSpeedBoost);
+    	}
+    }
+
+
+    public void PenaltyPunch() {
+    	if (lastPenaltyPunch + stage.penaltyCooldown < elapsed) {
+    		SetVx(v.x + stage.penaltySpeedBoost);
+    		lastPenaltyPunch = elapsed;
+    		hp--;
     	}
     }
 
     public void Stop() {
-		GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         stopped = true;
+        playerAnimation.SetTrigger("Idle");
     }
 
     public void Init(StageConfig s, float o) {
+    	stage = s;
         offset = o;
+
+    	pos = gameObject.transform.position;
+    	groundY = stage.groundLevel.transform.position.y;
         gameObject.transform.position = new Vector3(offset, 0, 0);
 
-
 		collidedWith = new List<GameObject>();
-		stage = s;
 
 		initialized = true;
 
@@ -55,23 +99,12 @@ public class Player : MonoBehaviour {
 				OnCollision(tmp.gameObject);
 			}
 		};
-        GetComponent<CollisionHandler>().groundCollisionsEnded += (tmp) => {
-            isOnGround = false;
-        };
-
-        GetComponent<CollisionHandler>().groundCollisionsStart += (tmp) => {
-            isOnGround = true;
-        };
 	}
 
 	void OnCollision(GameObject collided) {
+		Debug.Log("HIT");
 		foreach (SpeedMod mod in collided.GetComponents<SpeedMod>()) {
-			CurrentVerticalSpeed =+ mod.x;
-			gameObject.GetComponent<Player>().playerAnimation.SetTrigger("Hit");
-		}
-
-		foreach (Bumper mod in collided.GetComponents<Bumper>()) {
-			GetComponent<Rigidbody>().AddForce(new Vector3(mod.x, mod.y, 0));
+			SetVx(v.x + mod.x);
 			gameObject.GetComponent<Player>().playerAnimation.SetTrigger("Hit");
 		}
 
@@ -83,18 +116,60 @@ public class Player : MonoBehaviour {
 			return;
 		}
 
-		elapsed += Time.deltaTime;
+		isOnGround = pos.y <= groundY;
 
-		float delta = stage.acceleration * Time.deltaTime;
+		//FALLING
 
-		if (CurrentVerticalSpeed > stage.maxSpeed) {
-			CurrentVerticalSpeed = Mathf.Max(CurrentVerticalSpeed - delta, stage.maxSpeed);
-		} else {
-			CurrentVerticalSpeed = Mathf.Min(CurrentVerticalSpeed + delta, stage.maxSpeed);
+		float yChange = 0;
+		float xChange = 0;
+		if (isOnGround) {
+			SetVy(0);
+		} else if (!isOnGround && !isJumping) {
+			float tmp = v.y - stage.fallAcc * Time.deltaTime;
+			SetVy(tmp);
+			SetPosY(pos.y + Time.deltaTime * v.y);
+		} 
+
+		if (isJumping) {
+			
+			if (Time.time - jumpTimestamp > stage.jumpTime) {
+				isJumping = false;
+			} else {
+				float t = Time.time - jumpTimestamp;
+				float e = stage.jumpCurve.Evaluate(t/stage.jumpTime);
+				
+				SetPosY(groundY + stage.jumpHeight * e);
+			}
 		}
 
-		CurrentVerticalSpeed = Mathf.Min(CurrentVerticalSpeed, stage.speedHardCap);
-		distance = gameObject.transform.position.x - offset;
+		elapsed += Time.deltaTime;
+
+		if (v.x > stage.maxSpeed) {
+			 SetVx(Mathf.Max(v.x - stage.decceleration * Time.deltaTime, stage.maxSpeed));
+		} else {
+			SetVx(Mathf.Min(v.x + stage.acceleration * Time.deltaTime, stage.maxSpeed));
+		}
+
+		SetVx(Mathf.Min(v.x, stage.speedHardCap));
+		xChange = v.x * Time.deltaTime;
+		pos =  new Vector2(pos.x + xChange, Mathf.Max(groundY, pos.y));
+        
+        
+
+		gameObject.transform.position = new Vector3(pos.x + offset, pos.y);
+
+		UpdateVisuals();
+	}
+
+	void UpdateVisuals() {
+		playerAnimation.SetBool("jump", !GetComponent<Player>().isOnGround);
+
+        particles.SetActive(lastDash + 0.4f > elapsed);
+        
+
+        if (lastPenaltyPunch + 0.2f > elapsed) {
+        	playerAnimation.SetTrigger("Hit");
+        }
 	}
 
 
