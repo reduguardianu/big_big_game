@@ -64,6 +64,7 @@ public class Player : MonoBehaviour {
     public void Dash() {
     	if (lastDash + stage.dashCooldown < elapsed) {
     		SetVx(v.x + stage.dashSpeedBoost);
+            lastDash = Time.time;
     	}
     }
 
@@ -163,7 +164,6 @@ public class Player : MonoBehaviour {
 
 	void UpdateVisuals() {
 		playerAnimation.SetBool("jump", !GetComponent<Player>().isOnGround);
-
         particles.SetActive(lastDash + 0.4f > elapsed);
         
 
