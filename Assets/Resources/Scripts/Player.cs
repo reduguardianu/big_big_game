@@ -106,7 +106,7 @@ public class Player : MonoBehaviour {
 		Debug.Log("HIT");
 		foreach (SpeedMod mod in collided.GetComponents<SpeedMod>()) {
 			SetVx(v.x + mod.x);
-			gameObject.GetComponent<Player>().playerAnimation.SetTrigger("Hit");
+			if(mod.x < 0)gameObject.GetComponent<Player>().playerAnimation.SetTrigger("Hit");
 		}
 
 	}
