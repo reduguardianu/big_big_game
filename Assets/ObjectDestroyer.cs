@@ -9,4 +9,8 @@ public class ObjectDestroyer : MonoBehaviour {
 		}
 		GameObject.Destroy(collider.gameObject);
 	}
+
+    public GameObject particleFx1;
+    public GameObject particleFx2;
+
 }

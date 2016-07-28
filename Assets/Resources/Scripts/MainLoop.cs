@@ -12,6 +12,8 @@ public class MainLoop : MonoBehaviour {
 
 	bool gameHasEnded = false;
 
+    public GameObject zurasharDestroyer;
+
 	// Use this for initialization
 	void Start () {
 		players = new Player[2];
@@ -73,7 +75,13 @@ public class MainLoop : MonoBehaviour {
 
 		if (first.pos.x - second.pos.x > stageConfig.penaltyDistance) {
 			second.SetPosX(first.pos.x - stageConfig.penaltyDistance);
-			second.PenaltyPunch();
+            zurasharDestroyer.GetComponent<ObjectDestroyer>().particleFx1.SetActive(false);
+            zurasharDestroyer.GetComponent<ObjectDestroyer>().particleFx2.SetActive(false);
+            zurasharDestroyer.GetComponent<ObjectDestroyer>().particleFx1.SetActive(true);
+            zurasharDestroyer.GetComponent<ObjectDestroyer>().particleFx2.SetActive(true);
+
+            second.PenaltyPunch();
+
 		}
 
 		
