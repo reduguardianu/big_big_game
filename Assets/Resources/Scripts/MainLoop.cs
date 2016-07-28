@@ -78,7 +78,9 @@ public class MainLoop : MonoBehaviour {
 
 		
 		cam.GetComponent<CameraOperator>().target = first.gameObject;
-
+		///ukasz edit
+		cam.GetComponent<CameraOperator>().second = second.gameObject;
+		///
 
 		if (first.pos.x >= stageConfig.finish.transform.position.x) {
 			Won (first);
