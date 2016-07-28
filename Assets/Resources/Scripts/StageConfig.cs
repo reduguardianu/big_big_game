@@ -6,6 +6,8 @@ public class StageConfig : MonoBehaviour {
 	[Header("Prefabs")]
 	public GameObject playerAPrefab;
 	public GameObject playerBPrefab;
+	public GameObject positiveBuffParticles;
+	public GameObject negativeBuffParticles;
 
 	[Header("References")]
 	public GameObject spawn;

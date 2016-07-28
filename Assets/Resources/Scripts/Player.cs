@@ -103,10 +103,20 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnCollision(GameObject collided) {
+		GameObject part;
 		Debug.Log("HIT");
 		foreach (SpeedMod mod in collided.GetComponents<SpeedMod>()) {
 			SetVx(v.x + mod.x);
-			if(mod.x < 0)gameObject.GetComponent<Player>().playerAnimation.SetTrigger("Hit");
+			if(mod.x < 0)
+			{
+				gameObject.GetComponent<Player>().playerAnimation.SetTrigger("Hit");
+				part = (GameObject)Instantiate(stage.negativeBuffParticles);
+				part.transform.position = collided.transform.position;
+			}else
+			{
+				part = (GameObject)Instantiate(stage.positiveBuffParticles);
+				part.transform.position = collided.transform.position;
+			}
 		}
 
 	}
