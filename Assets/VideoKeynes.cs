@@ -2,17 +2,24 @@
 using System.Collections;
 
 public class VideoKeynes : MonoBehaviour {
-    public MovieTexture mt;
 
+    public MovieTexture movieTexture;
+    float timeToEnd;
     // Use this for initialization
     void Start () {
-        mt.Play();
-
+        movieTexture.Play();
+        timeToEnd = Time.time;
+        movieTexture.loop = true;
     }
 
     // Update is called once per frame
     void Update () {
-        mt.Play();
+        if (Time.time - timeToEnd >= movieTexture.duration- 0.1f)
+        {
+            Debug.Log("replay");
+            movieTexture.Play();
+            timeToEnd = Time.time;
 
+        }
     }
 }
